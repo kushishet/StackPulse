@@ -1,0 +1,29 @@
+{
+  "name": "stackpulse",
+  "version": "1.0.0",
+  "description": "Full-stack developer analytics, repository curation, and multi-developer metrics comparison platform.",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "verify": "npm run verify --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "github",
+    "developer-analytics",
+    "stackpulse",
+    "fullstack",
+    "react",
+    "typescript",
+    "postgresql",
+    "comparison"
+  ],
+  "author": "StackPulse Team",
+  "license": "MIT"
+}
